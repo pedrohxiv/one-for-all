@@ -1,0 +1,1 @@
+SELECT COUNT(DISTINCT song_id) AS `cancoes`, COUNT(DISTINCT artist_name) AS `artistas`, COUNT(DISTINCT album_name) AS `albuns` FROM SpotifyClone.songs, SpotifyClone.artists, SpotifyClone.albums;
