@@ -1,0 +1,1 @@
+SELECT al.album_name AS album, COUNT(so.song_id) AS favoritadas FROM SpotifyClone.albums AS al JOIN SpotifyClone.songs AS so ON al.album_id = so.album_id JOIN SpotifyClone.favorites AS fa ON so.song_id = fa.song_id GROUP BY album ORDER BY favoritadas DESC, album LIMIT 3;
