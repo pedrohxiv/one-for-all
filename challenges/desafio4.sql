@@ -1,0 +1,1 @@
+SELECT us.user_name AS `pessoa_usuaria`, CASE WHEN YEAR(MAX(hi.reproduction_date)) >= '2021' THEN 'Ativa' ELSE 'Inativa' END AS `status_pessoa_usuaria` FROM SpotifyClone.users AS us JOIN SpotifyClone.history AS hi ON hi.user_id = us.user_id GROUP BY `pessoa_usuaria` ORDER BY `pessoa_usuaria`;
