@@ -66,14 +66,14 @@ INSERT INTO
 VALUES
     ('Barbara Liskov', 82, 1),
     ('Robert Cecil Martin', 58, 1),
-    ('Ada Lovelace', 37, 4),
-    ('Martin Fowler', 46, 4),
-    ('Sandi Metz', 58, 4),
-    ('Paulo Freire', 19, 2),
-    ('Bell Hooks', 26, 2),
-    ('Christopher Alexander', 85, 3),
-    ('Judith Butler', 45, 3),
-    ('Jorge Amado', 58, 3);
+    ('Ada Lovelace', 37, 2),
+    ('Martin Fowler', 46, 2),
+    ('Sandi Metz', 58, 2),
+    ('Paulo Freire', 19, 3),
+    ('Bell Hooks', 26, 3),
+    ('Christopher Alexander', 85, 4),
+    ('Judith Butler', 45, 4),
+    ('Jorge Amado', 58, 4);
 
 INSERT INTO
     SpotifyClone.artists (artist_name)
