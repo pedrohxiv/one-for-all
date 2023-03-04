@@ -31,6 +31,7 @@ CREATE TABLE SpotifyClone.albums(
 CREATE TABLE SpotifyClone.songs(
     song_id INT PRIMARY KEY AUTO_INCREMENT,
     song_name VARCHAR(45) NOT NULL,
+    song_duration SMALLINT NOT NULL,
     album_id INT NOT NULL,
     FOREIGN KEY (album_id) REFERENCES albums(album_id)
 ) engine = InnoDB;
@@ -96,18 +97,18 @@ VALUES
     ('I Put A Spell On You', 6);
 
 INSERT INTO
-    SpotifyClone.songs (song_name, album_id)
+    SpotifyClone.songs (song_name, song_duration, album_id)
 VALUES
-    ('BREAK MY SOUL', 1),
-    ("VIRGO\'S GROOVE", 1),
-    ('ALIEN SUPERSTAR', 1),
-    ("Don\'t Stop Me Now", 2),
-    ('Under Pressure', 2),
-    ('Como Nossos Pais', 3),
-    ('O Medo de Amar é o Medo de Ser Livre', 3),
-    ('Samba em Paris', 4),
-    ("The Bard's Song", 5),
-    ('Feeling Good', 6);
+    ('BREAK MY SOUL', 279, 1),
+    ("VIRGO\'S GROOVE", 369, 1),
+    ('ALIEN SUPERSTAR', 116, 1),
+    ("Don\'t Stop Me Now", 203, 2),
+    ('Under Pressure', 152, 2),
+    ('Como Nossos Pais', 105, 3),
+    ('O Medo de Amar é o Medo de Ser Livre', 207, 3),
+    ('Samba em Paris', 267, 4),
+    ("The Bard's Song", 244, 5),
+    ('Feeling Good', 100, 6);
 
 INSERT INTO
     SpotifyClone.following (user_id, artist_id)

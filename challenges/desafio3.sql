@@ -1,0 +1,1 @@
+SELECT us.user_name AS `pessoa_usuaria`, COUNT(*) AS `musicas_ouvidas`, ROUND(SUM(so.song_duration) / 60, 2) AS `total_minutos` FROM SpotifyClone.users AS us JOIN SpotifyClone.history AS hi ON hi.user_id = us.user_id JOIN SpotifyClone.songs AS so ON so.song_id = hi.song_id GROUP BY us.user_name ORDER BY us.user_name ASC;
